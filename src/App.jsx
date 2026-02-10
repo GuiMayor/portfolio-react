@@ -206,7 +206,7 @@ const App = () => {
               Edward <br /> Villalobos
             </h1>
             <p className="text-emerald-400 text-xl font-medium mb-8">
-              Liderazgo Militar aplicado al Software Moderno
+              Del Liderazgo Militar, al Software Moderno
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#ia" className="bg-emerald-600 hover:bg-emerald-500 px-8 py-3 rounded text-white font-bold transition-all flex items-center gap-2">
@@ -239,7 +239,7 @@ const App = () => {
                     placeholder="Pregunta sobre Edward..." 
                     className="flex-1 bg-slate-100 border-none rounded-lg px-3 py-2 text-xs text-[#0A192F] focus:ring-1 focus:ring-emerald-500 outline-none"
                   />
-                  <button type="submit" className="p-2 bg-navy text-white rounded-lg hover:bg-slate-800 transition-colors">
+                  <button type="submit" className="p-2 bg-navy text-white rounded-lg hover:bg-slate-400 transition-colors">
                     <Send size={14} />
                   </button>
                 </form>
@@ -320,9 +320,9 @@ const App = () => {
             <button 
               onClick={handleAiAnalysis}
               disabled={isAnalyzing || !jdText}
-              className="w-full py-4 bg-navy text-white rounded-xl font-bold uppercase text-xs tracking-widest flex items-center justify-center gap-3 hover:bg-slate-800 transition-all disabled:opacity-50"
+              className="w-full py-4 bg-navy text-white rounded-xl font-bold uppercase text-xs tracking-widest flex items-center justify-center gap-3 hover:bg-slate-400 transition-all disabled:opacity-50"
             >
-              {isAnalyzing ? <><Loader2 className="animate-spin" /> Analizando con Gemini...</> : <>✨ Calcular Encaje Crítico</>}
+              {isAnalyzing ? <><Loader2 className="animate-spin" /> Analizando con Gemini...</> : <>✨ Comprobar Compatibilidad Laboral</>}
             </button>
 
             {aiAnalysis && (

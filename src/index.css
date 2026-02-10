@@ -1,1 +1,50 @@
 @import "tailwindcss";
+/* === FIX CONTRASTE TEXTO CHAT Y ANALISTA === */
+/* títulos */
+h1, h2, h3 {
+    color: #0f172a !important;
+  }
+  
+  /* texto general */
+  p, span, label {
+    color: #0f172a !important;
+  }
+  
+  /* inputs y textarea (donde escribes) */
+  input, textarea {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+  }
+  
+  /* texto que aparece al enviar el mensaje */
+  input::placeholder,
+  textarea::placeholder {
+    color: #475569 !important;
+  }
+  /* === FORZADO GLOBAL DE TEXTO (SOLO APP) === */
+  #root * {
+    color: #0f172a !important;
+  }
+  /* === AJUSTE BOTÓN CALCULAR ENCAJE CRÍTICO === */
+  
+  /* estado normal: solo borde visible */
+  button {
+    border: 2px solid #0a192f !important; /* borde oscuro visible */
+  }
+  
+  /* hover: se mantiene el fondo actual, se corrige el texto */
+  button:hover {
+    color: #0a192f !important; /* texto oscuro con contraste */
+  }
+  /* === Hover botones con mejor contraste === */
+  
+  /* Botón Calcular Encaje Crítico */
+  button:hover {
+    color: #ffffff !important; /* texto blanco legible */
+  }
+  
+  /* Botón Chat Virtual */
+  .chat-button:hover {
+    color: #ffffff !important; /* texto blanco legible */
+  }
+  
